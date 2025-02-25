@@ -2,7 +2,7 @@
 List of useful terminal tools that I enjoy.  Saved here for posterity so I don't forget them.
 
 1.  `ghostty` - [GhosTTY](https://ghostty.org/) - Great modern terminal
-  a. GhosTTY theme browser : `ghostty +list-themes`
+    a. GhosTTY theme browser : `ghostty +list-themes`
 3.  `kitty` - [kiTTY](https://sw.kovidgoyal.net/kitty/) - A close second to GhosTTY for a modern terminal
 4.  `btop` - [btop](https://github.com/aristocratos/btop) - Modern/awesome `top` replacement
 5.  `lazygit` - [lazygit](https://github.com/jesseduffield/lazygit) - TUI for Git
