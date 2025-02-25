@@ -18,7 +18,7 @@ List of useful terminal tools that I enjoy.  Saved here for posterity so I don't
 ## Aliases
 Related useful aliases
 ```bash
-alias docker="podman"
+alias docker="podman" # though it's probably better to link $PATH/docker to $PATH/podman
 alias minikubestart="minkube start --driver=podman --container-runtime=cri-o"
 
 ```
