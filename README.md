@@ -14,6 +14,12 @@ List of useful terminal tools that I enjoy.  Saved here for posterity so I don't
 10.  `minikube` - [minikube](https://minikube.sigs.k8s.io/docs/) - Local Kubernetes cluster / playground
 11.  `podman` - [podman](https://podman.io/) - Rootless, open source, Docker Desktop (and CLI w/ alias) replacement.  100% interchangeable with Docker commands so `alias docker="podman"` is suggested if your fingers are accustomed to typing "docker".
 12.  `starship` - [Starship](https://starship.rs/) - Terminal decorator with lots of helpful info.  "[Tokyo Night](https://starship.rs/presets/#tokyo-night)" is my favorite theme so far (replace 🍏 with 🐧 and add error return code - see Configuration/Starship).
+13.  `neofetch` - [neofetch **deprecated**](https://github.com/dylanaraps/neofetch) - Simple but helpful system information.  Non-deprecated alternatives can be found below (untested - I'll pare this list down to one primary and replace `neofetch` after evaluation) : 
+     1.   [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+     2.   [screenfetch](https://github.com/KittyKatt/screenFetch)
+     3.   [macchina](https://github.com/Macchina-CLI/macchina)
+     4.   [nerdfetch](https://github.com/ThatOneCalculator/NerdFetch)
+     5.   [hyfetch](https://github.com/hykilpikonna/hyfetch)
 
 ## Aliases
 Related useful aliases
