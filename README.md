@@ -35,8 +35,35 @@ alias minikubestart="minkube start --driver=podman --container-runtime=cri-o"
 
 ## Configurations
 ### Starship (Tokyo Night Preset)
-Add return code to prompt when an error occurs : 
 ```bash
+starship preset tokyo-night -o ~/.config/starship.toml
+```
+
+Add return code to prompt when an error occurs (`~/.config/starship.toml`): 
+```bash
+# Update the "format" setting to use a penguin and include the command status (replace or modify the first section of the config file to be) :
+format = """
+[░▒▓](#a3aed2)\
+[ 🐧 ](bg:#a3aed2 fg:#090c0c)\
+[](bg:#769ff0 fg:#a3aed2)\
+$directory\
+[](fg:#769ff0 bg:#394260)\
+$git_branch\
+$git_status\
+[](fg:#394260 bg:#212736)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#212736 bg:#1d2230)\
+$time\
+[ ](fg:#1d2230)\
+$status\
+\n$character"""
+
+## Leave the rest of this unchanged ##
+
+# Add this at the end of the configuration file
 [status]
 style = "bold red"
 format = "[\\[$status\\]]($style) "
