@@ -11,7 +11,7 @@ List of useful terminal tools that I enjoy.  Saved here for posterity so I don't
 6.  `glances` - [glances](https://github.com/nicolargo/glances) - Similar to `top`/`btop` but can also monitor containers (docker/podman) and potentially other resources.
 7.  `lazygit` - [lazygit](https://github.com/jesseduffield/lazygit) - TUI for Git
 8.  `k9s` - [k9s](https://github.com/derailed/k9s) - TUI for k8s
-9.  `lazydocker` - [lazydocker](https://github.com/jesseduffield/lazydocker) - TUI for docker (works with Podman)
+9.  `lazydocker` - [lazydocker](https://github.com/jesseduffield/lazydocker) - TUI for docker (works with Podman - See Configuration section at the bottom for how to set things up for usage with Podman)
 10.  `bat` - [bat](https://github.com/sharkdp/bat) - `cat` but with auto-paging and syntax highlighting
 11.  `broot` - [broot](https://github.com/Canop/broot) - TUI file system explorer with previews
 12.   `wttr.in` - [wttr.in](https://github.com/chubin/wttr.in) - Terminal weather forecast (`curl wttr.in?M`)
@@ -34,6 +34,15 @@ alias minikubestart="minkube start --driver=podman --container-runtime=cri-o"
 ```
 
 ## Configurations
+### Lazydocker with Podman (non-root)
+```bash
+systemctl --user enable --now podman.socket
+# You'll probably want to put this in your .bashrc or relevant RC file for your shell
+export DOCKER_HOST=unix:///run/user/1000/podman/podman.sock
+# lazydocker invokes the "docker" command so you MUST alias it to Podman to work.
+alias docker='podman' # This is a duplicate of one of the aliases in a section above - only do it once.
+```
+
 ### Starship (Tokyo Night Preset)
 ```bash
 starship preset tokyo-night -o ~/.config/starship.toml
