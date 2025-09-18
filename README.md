@@ -1,9 +1,9 @@
 # terminal-tools
 List of useful terminal tools that I enjoy.  Saved here for posterity so I don't forget them.
 
-1.  `ghostty` - [GhosTTY](https://ghostty.org/) - Great modern terminal
+1.  `kitty` - [kiTTY](https://sw.kovidgoyal.net/kitty/) - Great modern terminal with ncurses like tabs
+2.  `ghostty` - [GhosTTY](https://ghostty.org/) - Another great modern terminal, this one has graphical window decorator tabs
     1.  GhosTTY theme browser : `ghostty +list-themes`
-2.  `kitty` - [kiTTY](https://sw.kovidgoyal.net/kitty/) - A close second to GhosTTY for a modern terminal
 3.  `btop` - [btop](https://github.com/aristocratos/btop) - Modern/awesome `top` replacement
 4.  `zellij` - [zellij](https://zellij.dev/) - Modern/awesome terminal multiplexer (like `tmux` and/or `screen`, but better)
     5. `zellij-datetime` - [zellij-datetime](https://github.com/h1romas4/zellij-datetime) - Zellij plugin that adds the date/time at the top right.
