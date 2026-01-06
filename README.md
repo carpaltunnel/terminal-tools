@@ -6,8 +6,8 @@ List of useful terminal tools that I enjoy.  Saved here for posterity so I don't
     1.  GhosTTY theme browser : `ghostty +list-themes`
 3.  `btop` - [btop](https://github.com/aristocratos/btop) - Modern/awesome `top` replacement
 4.  `zellij` - [zellij](https://zellij.dev/) - Modern/awesome terminal multiplexer (like `tmux` and/or `screen`, but better)
-    5. `zellij-datetime` - [zellij-datetime](https://github.com/h1romas4/zellij-datetime) - Zellij plugin that adds the date/time at the top right.
-    6. See "Zellij-DateTime Layout Config" under "Configurations" below for the configuration file.
+     1.   `zellij-datetime` - [zellij-datetime](https://github.com/h1romas4/zellij-datetime) - Zellij plugin that adds the date/time at the top right.
+     2.   See "Zellij-DateTime Layout Config" under "Configurations" below for the configuration file.
 6.  `glances` - [glances](https://github.com/nicolargo/glances) - Similar to `top`/`btop` but can also monitor containers (docker/podman) and potentially other resources.
 7.  `lazygit` - [lazygit](https://github.com/jesseduffield/lazygit) - TUI for Git
 8.  `k9s` - [k9s](https://github.com/derailed/k9s) - TUI for k8s
